@@ -1,17 +1,17 @@
 # iGPSPORT Connect
 
-> ÔÊĞíµÚÈı·½appÁ¬½ÓiGPSPORTÕË»§²¢ÉÏ´«fitÎÄ¼şµ½iGPSPORTÍøÕ¾
+> å…è®¸ç¬¬ä¸‰æ–¹appè¿æ¥iGPSPORTè´¦æˆ·å¹¶ä¸Šä¼ fitæ–‡ä»¶åˆ°iGPSPORTç½‘ç«™
 
 
-µã»÷ÏÂÔØ [demo](http://my.igpsport.com/staticfile/testIgpsportAuth.apk)
+ç‚¹å‡»ä¸‹è½½ [demo](https://my.igpsport.com/staticfile/testIgpsportAuth.apk)
 
-### Òıµ¼ÓÃ»§ÊÚÈ¨
+### å¼•å¯¼ç”¨æˆ·æˆæƒ
 
-ÔÚÊÚÈ¨ActivityÖĞ·ÀÖ¹WebView¿Ø¼ş£¬µ¼º½ÖÁurl: http://my.igpsport.com/webapi/WebLoginAuth £¬²¢Ğ¯´øappid²ÎÊıÎªiGPSPORT·ÖÅä¸øµÚÈı·½appµÄappid
+åœ¨æˆæƒActivityä¸­é˜²æ­¢WebViewæ§ä»¶ï¼Œå¯¼èˆªè‡³url: https://my.igpsport.com/webapi/WebLoginAuth ï¼Œå¹¶æºå¸¦appidå‚æ•°ä¸ºiGPSPORTåˆ†é…ç»™ç¬¬ä¸‰æ–¹appçš„appid
 
-### »ñÈ¡ÓÃ»§ĞÅÏ¢ÒÔ¼°Token
+### è·å–ç”¨æˆ·ä¿¡æ¯ä»¥åŠToken
 
-ÎªWebViewÌí¼ÓJavaScript½Ó¿ÚÓÃÓÚ½ÓÊÜ·µ»ØµÄÊÚÈ¨ĞÅÏ¢£º
+ä¸ºWebViewæ·»åŠ JavaScriptæ¥å£ç”¨äºæ¥å—è¿”å›çš„æˆæƒä¿¡æ¯ï¼š
 
 ```java
 class JsInvoker {
@@ -28,40 +28,40 @@ class JsInvoker {
 
 }
 ```
-ÉèÖÃnameÎªapp
+è®¾ç½®nameä¸ºapp
 ```java
  wvAuth.addJavascriptInterface(new JsInvoker(), "app");
 
 ```
-ÔÚgetLoginResult·½·¨ÖĞ£¬result²ÎÊıÎªjson¸ñÊ½Êı¾İ£¬°üº¬ÓÃ»§ID£¬êÇ³Æ£¬ĞÔ±ğ£¬Éí¸ßÌåÖØºÍToken£¬Token¹ıÆÚÊ±¼äµÈĞÅÏ¢¡£
+åœ¨getLoginResultæ–¹æ³•ä¸­ï¼Œresultå‚æ•°ä¸ºjsonæ ¼å¼æ•°æ®ï¼ŒåŒ…å«ç”¨æˆ·IDï¼Œæ˜µç§°ï¼Œæ€§åˆ«ï¼Œèº«é«˜ä½“é‡å’ŒTokenï¼ŒTokenè¿‡æœŸæ—¶é—´ç­‰ä¿¡æ¯ã€‚
 
-### ÉÏ´«FitÎÄ¼ş
-ÉÏ´«½Ó¿ÚÎª£ºhttp://my.igpsport.com/Partner/UplodFit £¬´Ë½Ó¿ÚÒªÇóÏÂÁĞËÄ¸ö²ÎÊı£º
-
-```
-
-* file £ºÎÄ¼ş
-
-* memberid£º ÓÃ»§ID
-
-* appid£º APPID
-
-* token£ºÓÃ»§ÊÚÈ¨token
-```
-
-ÉÏ´«½á¹û»á·µ»ØintÊıÖµ£¬Õı±í±íÊ¾¸ÄÏßÂ·µÄid£¬´ËÊ±ÒÔÎªÉÏ´«³É¹¦£¬¸ºÖµÎª´íÎó´úÂë¡£
+### ä¸Šä¼ Fitæ–‡ä»¶
+ä¸Šä¼ æ¥å£ä¸ºï¼šhttps://my.igpsport.com/Partner/UplodFit ï¼Œæ­¤æ¥å£è¦æ±‚ä¸‹åˆ—å››ä¸ªå‚æ•°ï¼š
 
 ```
- -10001 »áÔ±²»ÄÜÎª¿Õ
- -10002 AppID²»ÄÜÎª¿Õ
- -10003 Token²»ÄÜÎª¿Õ
- -10004 AppIdÎŞĞ§
- -10005 ÓÃ»§ÊÚÈ¨ĞÅÏ¢´íÎó£¨²»´æÔÚ»òÕß¹ıÆÚ£©
- -20001 file²»ÄÜÎª¿Õ
- -20002 ÎÄ¼şÌ«´ó
- -20003 ÎÄ¼şÀàĞÍ²»Ö§³Ö
+
+* file ï¼šæ–‡ä»¶
+
+* memberidï¼š ç”¨æˆ·ID
+
+* appidï¼š APPID
+
+* tokenï¼šç”¨æˆ·æˆæƒtoken
 ```
-²Î¿¼´úÂëÈçÏÂ£º
+
+ä¸Šä¼ ç»“æœä¼šè¿”å›intæ•°å€¼ï¼Œæ­£è¡¨è¡¨ç¤ºæ”¹çº¿è·¯çš„idï¼Œæ­¤æ—¶ä»¥ä¸ºä¸Šä¼ æˆåŠŸï¼Œè´Ÿå€¼ä¸ºé”™è¯¯ä»£ç ã€‚
+
+```
+ -10001 ä¼šå‘˜ä¸èƒ½ä¸ºç©º
+ -10002 AppIDä¸èƒ½ä¸ºç©º
+ -10003 Tokenä¸èƒ½ä¸ºç©º
+ -10004 AppIdæ— æ•ˆ
+ -10005 ç”¨æˆ·æˆæƒä¿¡æ¯é”™è¯¯ï¼ˆä¸å­˜åœ¨æˆ–è€…è¿‡æœŸï¼‰
+ -20001 fileä¸èƒ½ä¸ºç©º
+ -20002 æ–‡ä»¶å¤ªå¤§
+ -20003 æ–‡ä»¶ç±»å‹ä¸æ”¯æŒ
+```
+å‚è€ƒä»£ç å¦‚ä¸‹ï¼š
 ```java
 File myFile = new File(filename);
 
@@ -69,27 +69,27 @@ RequestParams params = new RequestParams();
 try {
     params.put("file", myFile);
 } catch (Exception ex) {
-	Toast.makeText(getApplicationContext(), "ÎŞ·¨ÉÏ´«¸ÃÎÄ¼ş", Toast.LENGTH_SHORT).show();
+	Toast.makeText(getApplicationContext(), "æ— æ³•ä¸Šä¼ è¯¥æ–‡ä»¶", Toast.LENGTH_SHORT).show();
 	return;
 }
 params.add("memberid", mUser.MemberID + "");
 params.add("appid", Constants.APPID + "");
 params.add("token", mUser.Token + "");
 
-final ProgressDialog progressDialog = ProgressDialog.show(getApplicationContext(), "", "ÉÏ´«ÖĞ...");
+final ProgressDialog progressDialog = ProgressDialog.show(getApplicationContext(), "", "ä¸Šä¼ ä¸­...");
 AsyncHttpClient myClient = new AsyncHttpClient();
 myClient.post(getApplicationContext(), Constants.API_UPLOAD_FIT, params, new AsyncHttpResponseHandler() {
 	@Override
 	public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
 		progressDialog.dismiss();
 		String result = new String(responseBody);
-		Toast.makeText(getApplicationContext(), "ÉÏ´«³É¹¦£¬½á¹û£º" + result, Toast.LENGTH_SHORT).show();
+		Toast.makeText(getApplicationContext(), "ä¸Šä¼ æˆåŠŸï¼Œç»“æœï¼š" + result, Toast.LENGTH_SHORT).show();
 	}
 
 	@Override
 	public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
 		progressDialog.dismiss();
-		Toast.makeText(getApplicationContext(), "ÉÏ´«Ê§°Ü", Toast.LENGTH_SHORT).show();
+		Toast.makeText(getApplicationContext(), "ä¸Šä¼ å¤±è´¥", Toast.LENGTH_SHORT).show();
 	}
 });
 ```
